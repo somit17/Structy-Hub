@@ -24,4 +24,8 @@ def tree_sum(root):
     if root is None:
       return 0
 
-    
+    left = DFS_recusrive(root.left)
+    right = DFS_recusrive(root.right)
+    return root.val + left + right
+
+  return DFS_recusrive(root)
