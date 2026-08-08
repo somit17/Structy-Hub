@@ -17,4 +17,11 @@ def tree_sum(root):
         stack.append(current.left)
       if current.right:
         stack.append(current.right)
-  pass # todo
+    return total
+  #return DFS(root)
+
+  def DFS_recusrive(root):
+    if root is None:
+      return 0
+
+    
