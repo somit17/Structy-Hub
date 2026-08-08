@@ -52,9 +52,9 @@ def tree_levels(root):
             return
         
         if len(levels) == level_num:
-            levels.append([root.val])  # Fixed: use root.val, not current.val
+            levels.append([root.val])  
         else:
-            levels[level_num].append(root.val)  # Fixed: use root.val
+            levels[level_num].append(root.val)  
         
         fill_levels(root.left, levels, level_num + 1)
         fill_levels(root.right, levels, level_num + 1)
