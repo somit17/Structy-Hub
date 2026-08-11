@@ -13,5 +13,12 @@ def uncompress(s):
       i = j
 
   return ''.join(result)
+
+
+# n = no of groups
+# m = max number of any groups
+
+#TC = O(nm)
+#SC = O(nm)
       
   
